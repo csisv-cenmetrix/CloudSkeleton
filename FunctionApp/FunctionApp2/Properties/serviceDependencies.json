@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights"
+    },
+    "storage1": {
+      "type": "storage",
+      "connectionId": "https://functionapp2storage22.blob.core.windows.net/temp-pdf"
+    }
+  }
+}
