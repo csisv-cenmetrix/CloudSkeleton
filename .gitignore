@@ -1,0 +1,6 @@
+FunctionApp/FunctionApp2/Properties/PublishProfiles/cs-cenmetrix-functionapp - Web Deploy.pubxml
+FunctionApp/.vs/PdfCreator/DesignTimeBuild/.dtbcache.v2
+FunctionApp/.vs/PdfCreator/v16/.suo
+FunctionApp/FunctionApp2/Properties/PublishProfiles/cs-cenmetrix-functionapp - Zip Deploy.pubxml
+FunctionApp/FunctionApp2/Properties/ServiceDependencies/cs-cenmetrix-functionapp - Zip Deploy/profile.arm.json
+FunctionApp/FunctionApp2/Properties/ServiceDependencies/samplefunction123 - Zip Deploy/profile.arm.json
