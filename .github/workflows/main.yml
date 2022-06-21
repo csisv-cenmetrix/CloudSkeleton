@@ -13,4 +13,4 @@ jobs:
       with:
         server-name: taskapi2.database.windows.net
         connection-string: ${{ secrets.AZURE_DB_CONNSTRING }}
-        sql-file: 'TaskAPI/data.sql'
+        sql-file: './initializeData.sql'
