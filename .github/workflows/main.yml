@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/sql-action@v1
+      with:
+        server-name: cs-cenmetrix-sqlserver.database.windows.net
+        connection-string: ${{ secrets.AZURE_DB_CONNSTRING }}
+        sql-file: './TaskAPI/data.sql'
