@@ -11,7 +11,7 @@ jobs:
 
     - uses: azure/login@v1
       with:
-	creds: ${{ secrets.AZURE_CREDENTIALS }}
+	credentials: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/sql-action@v1
       with:
 	server-name: taskapi2.database.windows.net
