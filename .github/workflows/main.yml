@@ -1,0 +1,19 @@
+name: Azure DB Initialize
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: azure/login@v1
+      with:
+	creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/sql-action@v1
+      with:
+	server-name: taskapi2.database.windows.net
+	connection-string: ${{ secrets.AZURE_DB_CONNSTRING }}
+	sql-file: data.sql
