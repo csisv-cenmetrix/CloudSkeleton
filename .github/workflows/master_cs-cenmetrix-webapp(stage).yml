@@ -61,6 +61,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'cs-cenmetrix-webapp'
-          slot-name: 'stage'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3E76C346761A4317BE2CBFAFC552774E }}
+#           slot-name: 'stage'
+          publish-profile: ${{ secrets.PUBLISHPROD }}
           package: .
