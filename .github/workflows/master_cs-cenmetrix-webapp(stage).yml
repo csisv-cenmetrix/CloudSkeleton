@@ -26,15 +26,15 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        working-directory: ./Starter-files/TaskAPI
+        working-directory: /Starter-files/TaskAPI
         run: dotnet build --configuration Release
        
       - name: CI - Unit Testing
-        working-directory: ./Starter-files/TaskAPI
+        working-directory: /Starter-files/TaskAPI
         run: dotnet test
 
       - name: dotnet publish
-        working-directory: ./Starter-files/TaskAPI
+        working-directory: /Starter-files/TaskAPI
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
